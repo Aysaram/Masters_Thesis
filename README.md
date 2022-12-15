@@ -1,4 +1,4 @@
-# Masters_Thesis
+# Masters_Thesis DOI: 10.5281/zenodo.7443274
 This repository contains scripts and data used for doing the analysis for the master's thesis: 
 
 #Mapping volatiles that induce sensory responses in Delia antiqua: comparative identification across a set of crops
