@@ -19,9 +19,9 @@ source("Scripts/Read_in.R")
 
 # EAD_data these steps needs to be checked.
 source("Scripts/EAD_data.R")
-ggsave(plot = Combined_plot, filename = "Output/Fig_2.jpg", 
+ggsave(plot = Combined_plot, filename = "Output/Fig_4.jpg", 
        units = "mm", height = 250, width = 260, dpi = 300, bg = "white") #simply saves the graph as a jpeg in the given format
-ggsave(plot = Combined_plot, filename = "Output/Fig_2.pdf", 
+ggsave(plot = Combined_plot, filename = "Output/Fig_4.pdf", 
        units = "mm", height = 250, width = 260, dpi = 300, bg = "white") #simply saves the graph as a jpeg in the given format
 
 # Some extra key values 
@@ -46,7 +46,7 @@ Molnet_plot_large %>%
 
 # Plots heatmap 
 source("Scripts/MS_heatmap.R")
-Dendro_heatmap_leg %>% ggsave(plot = ., filename = "Output/Fig_4.jpg",
+Dendro_heatmap_leg %>% ggsave(plot = ., filename = "Output/Fig_2.jpg",
                               height = 350, width = 210, units = "mm", dpi = 450)
-Dendro_heatmap_leg %>% ggsave(plot = ., filename = "Output/Fig_4.pdf",
+Dendro_heatmap_leg %>% ggsave(plot = ., filename = "Output/Fig_2.pdf",
                               height = 350, width = 210, units = "mm")
