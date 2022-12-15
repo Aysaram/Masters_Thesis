@@ -18,19 +18,19 @@ rEAD_data <- function(Location, Volatilome_name) {
 }
 
 #Reads in onion data
-Onion_data <- rEAD_data("Data/Vegetables_Diptera/Onion_Analysis.xlsx", 
+Onion_data <- rEAD_data("Data/Onion_Analysis.xlsx", 
                         Volatilome_name = "Volatilome_220316_Onion_Mix")
 
 #Reads in napa data
-Napa_data <- rEAD_data("Data/Vegetables_Diptera/Napa_Analysis.xlsx", 
+Napa_data <- rEAD_data("Data/Napa_Analysis.xlsx", 
                        Volatilome_name = "Volatilome_220316_Napa_Mix")
 
 #Reads in radish data
-Radish_data <- rEAD_data("Data/Vegetables_Diptera/Radish_Analysis.xlsx", 
+Radish_data <- rEAD_data("Data/Radish_Analysis.xlsx", 
                          Volatilome_name = "Volatilome_220328_Radish_Mix")
 
 #Reads in carrot data
-Carrot_data <- rEAD_data("Data/Vegetables_Diptera/Carrot_Analysis.xlsx", 
+Carrot_data <- rEAD_data("Data/Carrot_Analysis.xlsx", 
                          Volatilome_name = "Volatilome_220328_Carrot_Mix")
 
 # Droso1_data <- rEAD_data("Data/Vegetables_Diptera/DrosoMix1_Analysis.xlsx",
@@ -43,7 +43,7 @@ Carrot_data <- rEAD_data("Data/Vegetables_Diptera/Carrot_Analysis.xlsx",
 #                          Volatilome_name = "Volatilome_DrosoMix3")
 
 #Reads in the key with functional classification 
-Key_compounds_class_data <- read.xlsx("Data/Vegetables_Diptera/Key_Compound_names/Key_compounds_class.xlsx") %>% 
+Key_compounds_class_data <- read.xlsx("Data/Key_Compound_names/Key_compounds_class.xlsx") %>% 
   mutate(CAS.INCHI = stri_replace_all_fixed(CAS.INCHI, " ", ""))
 
 #Combines data into one tibble, commented out part messes with Gives_response
