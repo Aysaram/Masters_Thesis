@@ -10,3 +10,9 @@ Each raw dataset is named after the crop followd by _Analysis, e.g. Onion_Analys
 Data also contains a key which is used to correct any mistakes with naming as well as append additional chemical information such as functional classes, SMILES or InChi.
 
 The code is written in R and the code generates the following figures as well as a table string for LaTeX:
+
+![plot](./Output/Fig_2.jpg)
+
+![plot](./Output/Fig_3.jpg)
+
+![plot](./Output/Fig_4.jpg)
